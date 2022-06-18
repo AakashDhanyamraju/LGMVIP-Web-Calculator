@@ -4,6 +4,11 @@ import './calculator.css';
 
 import { btns, BTN_ACTIONS } from './btnConfig';
 
+export const theme=()=>{
+  document.body.classList.toggle("dark");
+  
+}
+
 const Calculator = () => {
 
     const btnsRef = useRef(null);
@@ -20,7 +25,9 @@ const Calculator = () => {
     const btnClick = (item) => {
         const expDiv = expRef.current;
 
-        if (item.action === BTN_ACTIONS.THEME) document.body.classList.toggle('dark');
+        if (item.action === BTN_ACTIONS.THEME) {
+            theme()
+        }
 
         if (item.action === BTN_ACTIONS.ADD) {
             addAnimSpan(item.display);

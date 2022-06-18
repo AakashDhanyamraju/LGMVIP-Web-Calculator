@@ -1,9 +1,15 @@
+
+
+
+
 export const BTN_ACTIONS = {
     ADD: 'ADD',
     THEME: 'THEME',
     CALC: 'CALC',
     DELETE: 'DELETE'
 }
+
+
 
 export const btns = [
     {
@@ -87,7 +93,7 @@ export const btns = [
         class: 'btn__op'
     },
     {
-        display: '☀️',
+        display:  '☀️',
         action: BTN_ACTIONS.THEME,
         class: ''
     },
